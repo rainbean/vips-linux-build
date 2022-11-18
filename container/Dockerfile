@@ -15,6 +15,8 @@ RUN apt-get update \
 		libtool \
 		nasm \
 		clang \
+		libcairo2-dev \
+		libgdk-pixbuf2.0-dev \
 		libpng-dev \
 		libjpeg-turbo8-dev \
 		libgif-dev \

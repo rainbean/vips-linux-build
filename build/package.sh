@@ -13,9 +13,9 @@ tar rf $target liblcms2.so* libspng.so* libvips-cpp.so* libvips.so*
 
 cd /usr/lib/x86_64-linux-gnu/
 tar rf $target \
-    libglib-2.0.so* libgobject-2.0.so* libgmodule-2.0.so* libgio* libexpat.so* libgsf-1.so* \
-    libexif.so* libwebpmux.so* libwebpdemux.so* libwebp.so* libtiff.so* librsvg-2.so* libcairo.so* \
+    libglib-2.0.so* libgobject-2.0.so* libgmodule-2.0.so* libgio-2.0.so* libexpat.so* libgsf-1.so* \
+    libexif.so* libwebpmux.so* libwebpdemux.so* libwebp.so* libtiff.so* libcairo.so* \
     liborc-0.4.so* libxml2.so* libjbig.so* libjpeg.so* libcairo-gobject.so* libpixman-1.so* libpng16* \
     libsqlite3.so* libbrotlidec.so* libbrotlicommon.so* libbrotlienc.so* libicuuc.so* libicudata.so*
 
-gz $target
+gzip $target

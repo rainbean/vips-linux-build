@@ -9,15 +9,14 @@ set -e
 work_dir=$(pwd)
 
 # build each library
-jobs=('cmake' 'openjpeg' 'lcms' 'libspng' 'mozjpeg' 'highway' 'libjxl' 'openslide' 'libvips')
-for task in "${jobs[@]}"
+deps=('cmake' 'openjpeg' 'lcms' 'libspng' 'mozjpeg' 'highway' 'libjxl' 'openslide' 'libvips')
+for lib in "${deps[@]}"
 do
-    # work on mounted tmp folder
     cd /var/tmp
-    . $work_dir/$task.sh
+    . $work_dir/$lib.sh
 done
 
 # pack package
-# cd $work_dir
-# . $work_dir/package.sh
+cd $work_dir
+. $work_dir/package.sh
 

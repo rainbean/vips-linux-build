@@ -8,4 +8,4 @@ cd openslide-3.4.1
 autoreconf -fi
 ./configure
 make -j 4
-make install/strip
+make install-strip

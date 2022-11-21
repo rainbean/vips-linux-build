@@ -5,6 +5,8 @@ SPNG_VERSION=0.7.2
 wget -q https://github.com/randy408/libspng/archive/refs/tags/v${SPNG_VERSION}.tar.gz -O libspng.tar.gz
 tar xf libspng.tar.gz
 cd libspng-${SPNG_VERSION}
-meson build --buildtype=release -Dbuild_examples=false
+meson build \
+    --buildtype=release \
+    -Dbuild_examples=false
 meson compile -C build
 meson install -C build

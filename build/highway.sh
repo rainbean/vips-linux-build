@@ -6,6 +6,7 @@ wget -q https://github.com/google/highway/archive/refs/tags/${HIGHWAY_VERSION}.t
 tar xf highway.tar.gz
 cd highway-${HIGHWAY_VERSION}
 cmake -Bbuild -H. \
+    -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr/local \
     -DBUILD_TESTING=OFF \
     -DHWY_ENABLE_CONTRIB=OFF \

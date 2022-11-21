@@ -6,6 +6,7 @@ wget -q https://github.com/libjxl/libjxl/archive/refs/tags/v${JXL_VERSION}.tar.g
 tar xf libjxl.tar.gz
 cd libjxl-${JXL_VERSION}
 cmake -Bbuild -H. \
+    -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_PREFIX=/usr/local \
     -DBUILD_TESTING=OFF \
     -DJPEGXL_ENABLE_TOOLS=OFF \

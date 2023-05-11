@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 
-# Default arguments
-tmpdir="/var/tmp/vips"
-
-# Ensure temporary dir exists
-mkdir -p $tmpdir
-
 # Build a machine image with all the required build tools pre-installed
 docker build -t libvips-build-linux container
 
